@@ -1,0 +1,294 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <div fxLayout="column wrap" class="marginauto width86" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="column wrap" class="fullWidth" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false">
+      <h2>
+        Claim Number - 9701025014849-1</h2>
+    </div>
+    <div fxLayout="row wrap" class="font600 claimpadding font12 fullWidth greyBg" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="marginbottom5 font600 lightGrey">
+                Life Assured</span><span>
+                Mr M Test</span></div>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="marginbottom5 font600 lightGrey">
+                Capture Date</span><span>
+                30/08/2021</span></div>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="marginbottom5 font600 lightGrey">
+                Captured By</span><span>
+                Siyabonga Hlongwane</span></div>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="marginbottom5 font600 lightGrey">
+                Status</span><span>
+                Denied</span></div>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="marginbottom5 font600 lightGrey">
+                Reason</span><span>
+                Mr M Test</span></div>
+      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="marginbottom5 font600 lightGrey">
+                Concern</span><span>
+                Mr M Test</span></div>
+    </div>
+    <div fxLayout="column wrap" class="margintop50 fullWidth" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <mat-tab-group mat-align-tabs="start">
+        <mat-tab label="Contact Details" class="colorPrimary">
+          <div fxLayout="column wrap" class="fullWidth" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" class="fullWidth" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" style="margin-right: 60px;" class="fullWidth" fxFlex="12" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+                <mat-card style="background: #5981B3 0% 0% no-repeat padding-box !important;" class="fullWidth">
+                  <mat-card-content>
+                    <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><img imgSrc="img/user2.svg" class="colorWhite userIcon">
+                      <div class="colorWhite contactText">
+                        CONTACT 1</div>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div fxLayout="column wrap" style="margin-right: 60px;" class="fullWidth" fxFlex="12" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+                <mat-card class="fullWidth">
+                  <mat-card-content>
+                    <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><img imgSrc="img/user.svg" class="colorWhite userIcon">
+                      <div class="contactText">
+                        CONTACT 2</div>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div fxLayout="column wrap" style="margin-right: 60px;" class="fullWidth" fxFlex="12" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+                <mat-card class="fullWidth">
+                  <mat-card-content>
+                    <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><img imgSrc="img/user.svg" class="colorWhite userIcon">
+                      <div class="contactText">
+                        CONTACT 2</div>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div fxLayout="column wrap" style="margin-right: 60px;" class="fullWidth" fxFlex="12" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+                <mat-card class="fullWidth">
+                  <mat-card-content>
+                    <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><img imgSrc="img/user.svg" class="colorWhite userIcon">
+                      <div class="contactText">
+                        CONTACT 2</div>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+            </div>
+            <div fxLayout="column wrap" class="margintop50 fullWidth" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+              <form [formGroup]="claimsForm">
+                <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <mat-card>
+                    <mat-card-content>
+                      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                        <div fxLayout="row wrap" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+                          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="font600 font12">
+                Title <span class="colorRed">*</span></span>
+                            <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;never&apos;">
+                              <mat-select formControlName="title" placeholder="Select Title" [required]="false">
+                                <ng-template ngFor let-option [ngForOf]="titles" let-i="index">
+                                  <mat-option [value]="option.title">{{option.title}}</mat-option>
+                                </ng-template>
+                              </mat-select>
+
+                            </mat-form-field>
+                          </div>
+                          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="font600 font12">
+                First Name <span class="colorRed">*</span></span>
+                            <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;">
+                              <mat-select formControlName="firstName" placeholder="First Name" [required]="false" (selectionChange)="onSelect($event)" [value]="option">
+                                <ng-template ngFor let-option [ngForOf]="beneficiaries" let-i="index">
+                                  <mat-option [value]="option.fullName">{{option.fullName}}</mat-option>
+                                </ng-template>
+                              </mat-select>
+
+                            </mat-form-field>
+                          </div>
+                          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="font600 font12">
+                Last Name <span class="colorRed">*</span></span>
+                            <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                              <input matInput placeholder="Surname" [required]="false" formControlName="surname">
+
+                            </mat-form-field>
+                          </div>
+                        </div>
+                        <div fxLayout="row wrap" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+                          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="font600 font12">
+                Initials</span>
+                            <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                              <input matInput placeholder="Initials" [required]="false" formControlName="initials">
+
+                            </mat-form-field>
+                          </div>
+                          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="font600 font12">
+                ID Number <span class="colorRed">*</span></span>
+                            <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                              <input matInput placeholder="ID Number" [required]="false" formControlName="idNumber" (keyup)="populateSomeFields($event)">
+
+                            </mat-form-field>
+                          </div>
+                          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="font600 font12">
+                Date of Birth </span>
+                            <mat-form-field [appearance]="&apos;outline&apos;">
+                              <input matInput placeholder="Date of Birth" [matDatepicker]="picker" formControlName="dateOfBirth" [required]="false" [disabled]="false">
+                              <mat-datepicker-toggle matSuffix [for]="picker" disabled="false"></mat-datepicker-toggle>
+                              <mat-datepicker #picker [disabled]="false"></mat-datepicker>
+
+                            </mat-form-field>
+                          </div>
+                        </div>
+                        <div fxLayout="row wrap" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+                          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="font600 font12">
+                Relationship <span class="colorRed">*</span></span>
+                            <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;never&apos;">
+                              <mat-select formControlName="relationship" placeholder="Select Relationship" [required]="false">
+                                <ng-template ngFor let-option [ngForOf]="relationship" let-i="index">
+                                  <mat-option [value]="option.title">{{option.title}}</mat-option>
+                                </ng-template>
+                              </mat-select>
+
+                            </mat-form-field>
+                          </div>
+                          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                            <p class="font600 font12">
+                              Gender <span class="colorRed">*</span></p>
+                            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                              <div fxLayout="row wrap" class="radioGroup" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                                <mat-radio-group class="radioGroup" formControlName="gender" [required]="false">
+                                  <mat-radio-button class="radioMargin" [required]="false" value="Male" [labelPosition]="&apos;after&apos;">Male</mat-radio-button>
+                                  <mat-radio-button [required]="false" value="female" [labelPosition]="&apos;after&apos;">Female</mat-radio-button>
+                                </mat-radio-group>
+                              </div>
+                            </div>
+                          </div>
+                          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="font600 font12">
+                Cell Number <span class="colorRed">*</span></span>
+                            <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                              <input matInput placeholder="Cell Number" [required]="false" formControlName="cellNumber">
+
+                            </mat-form-field>
+                          </div>
+                        </div>
+                        <div fxLayout="row wrap" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+                          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="font600 font12">
+                Home Telephone</span>
+                            <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                              <input matInput placeholder="Home Telephone " [required]="false" formControlName="homeTelephone">
+
+                            </mat-form-field>
+                          </div>
+                          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="font600 font12">
+                Work Telephone</span>
+                            <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                              <input matInput placeholder="Work Telephone " [required]="false" formControlName="workTelephone">
+
+                            </mat-form-field>
+                          </div>
+                          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="font600 font12">
+                Fax Number</span>
+                            <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                              <input matInput placeholder="Fax number" [required]="false" formControlName="faxNumber">
+
+                            </mat-form-field>
+                          </div>
+                        </div>
+                        <div fxLayout="row wrap" fxLayoutAlign="space-between center" [fxShow]="true" [fxHide]="false">
+                          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="font600 font12">
+                Email Address <span class="colorRed">*</span></span>
+                            <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                              <input matInput placeholder="Email Address" [required]="false" formControlName="email">
+
+                            </mat-form-field>
+                          </div>
+                          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                            <p class="font600 font12">
+                              Communication Type <span class="colorRed">*</span></p>
+                            <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                              <div fxLayout="row wrap" class="radioGroup" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                                <mat-radio-group class="radioGroup" formControlName="communicationType" [required]="false">
+                                  <mat-radio-button class="radioMargin" [required]="false" value="SMS" [labelPosition]="&apos;after&apos;">SMS</mat-radio-button>
+                                  <mat-radio-button class="radioMargin" [required]="false" value="Email" [labelPosition]="&apos;after&apos;">Email</mat-radio-button>
+                                </mat-radio-group>
+                              </div>
+                            </div>
+                          </div>
+                          <div fxLayout="column wrap" fxFlex="30" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                            <p class="font600 font12">
+                              Main Contact</p>
+                            <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                              <mat-radio-group class="radioGroup" formControlName="isMainContact" [required]="false">
+                                <mat-radio-button class="radioMargin" [required]="false" value="Yes" [labelPosition]="&apos;after&apos;">Yes</mat-radio-button>
+                                <mat-radio-button class="radioMargin" [required]="false" value="No" [labelPosition]="&apos;after&apos;">No</mat-radio-button>
+                              </mat-radio-group>
+                            </div>
+                          </div>
+                        </div>
+                        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="fullWidth font600 font12">
+                Point of connection</span>
+                          <mat-form-field class="width65" [appearance]="&apos;outline&apos;">
+                            <textarea matInput formControlName="pointOfConnection" placeholder="Point of connection" [required]="false"></textarea>
+                          </mat-form-field>
+                        </div>
+                        <div fxLayout="column wrap" class="fullWidth margintop50" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                          <div class="font12 font600">
+                            <span class="colorRed">*</span> Indicates Mandatory
+                          </div>
+                        </div>
+                      </div>
+                    </mat-card-content>
+                  </mat-card>
+                </div>
+                <div fxLayout="column wrap" class="marginbottom30 fullWidth margintop50" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <div class="font14 font600">
+                    Address</div>
+                </div>
+                <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                  <mat-card>
+                    <mat-card-content>
+                      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+                        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="font600 font12">
+                Address Line 1 <span class="colorRed">*</span></span>
+                          <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                            <input matInput placeholder="Address Line 1" [required]="false" formControlName="addressLine1">
+
+                          </mat-form-field>
+                        </div>
+                        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="font600 font12">
+                Address Line 2 </span>
+                          <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                            <input matInput placeholder="Address Line 2" [required]="false" formControlName="addressLine2">
+
+                          </mat-form-field>
+                        </div>
+                        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="font600 font12">
+                Address Line 3</span>
+                          <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                            <input matInput placeholder="Address Line 3" [required]="false" formControlName="addressLine3">
+
+                          </mat-form-field>
+                        </div>
+                        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="font600 font12">
+                Address Line 3 </span>
+                          <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                            <input matInput placeholder="Suburb" [required]="false" formControlName="suburb">
+
+                          </mat-form-field>
+                        </div>
+                        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="font600 font12">
+                Code <span class="colorRed">*</span> </span>
+                          <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                            <input matInput placeholder="Code" [required]="false" formControlName="code">
+
+                          </mat-form-field>
+                        </div>
+                      </div>
+                    </mat-card-content>
+                  </mat-card>
+                </div>
+              </form>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="Event Details" class="colorPrimary"></mat-tab>
+      </mat-tab-group>
+    </div>
+    <div fxLayout="column wrap" class="marginbottom30 fullWidth" fxFlex="100" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" fxFlex="33" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><button mat-raised-button class="btnPrimary colorWhite" (click)="saveClaim(claimsForm)">SAVE</button></div>
+    </div>
+  </div>
+</div>
